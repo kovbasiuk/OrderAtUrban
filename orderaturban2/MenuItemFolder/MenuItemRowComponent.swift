@@ -14,24 +14,28 @@ import struct Kingfisher.KFImage
 
 
 /*
-Struct is to make any adjustments to the image
-*/
+ Struct is to make any adjustments to the image
+ */
 struct MenuItemRowComponentIMG: View {
     
-   let menuItem:MenuItem
- 
+    let menuItem:MenuItem
+    
     
     //method to avoid immatability
     func getItemURL() -> URL {
-       
-   return URL(
-    string: menuItem.imgURL)!
         
-     }
+        return URL(
+            string: menuItem.imgURL)!
+        
+    }
     
     //Note for future: check kingfisher uisupport for ways to make more efficient
     var body: some View {
-        KFImage(getItemURL())
+        //fade
+        KFImage(getItemURL(), options: [
+            .transition(.fade(0.6)),
+
+        ])
             .resizable()
             .renderingMode(.original)
             .aspectRatio(contentMode: .fill)
@@ -44,12 +48,12 @@ struct MenuItemRowComponentIMG: View {
 }
 
 /*
-Struct is a component of row which displays a preview of all estbalishments horizonally in the Row file
-*/
+ Struct is a component of row which displays a preview of all MenuItems horizonally in the Row file
+ */
 
 struct MenuItemRowComponent: View {
     
-  let menuItem:MenuItem
+    let menuItem:MenuItem
     
     var body: some View {
         
@@ -57,26 +61,43 @@ struct MenuItemRowComponent: View {
             
             
            
+            
             MenuItemRowComponentIMG(menuItem: menuItem)
-               
             
-             VStack(alignment: .leading, spacing: 5.0){
-                Text(menuItem.name)
-                .font(.headline)
-                .multilineTextAlignment(.leading)
-                .foregroundColor(.primary)
-                Text("ADD DESCRIPTION HERE")
-                .font(.subheadline)
-                .multilineTextAlignment(.leading)
-                .foregroundColor(.secondary)
-                .lineLimit(2)
-                .frame(height: 40)
+            Text(menuItem.name)
+                           .font(.headline)
+                           .multilineTextAlignment(.leading)
+                           .foregroundColor(.primary)
             
+            VStack(alignment: .leading, spacing: 5.0){
+                
+            
+                Text(menuItem.desc)
+                    .font(.subheadline)
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(.primary)
+                    .lineLimit(2)
+                    .frame(height: 40)
             }
+            
+            HStack{
+                Text("Prep Time:")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                Text("\(menuItem.prepTime)")
+                    .foregroundColor(Color("secGreen"))
+                
+                //if prep time is more than 1 then minites
+                //becomes plural
+                Text(menuItem.prepTime>1 ? "minutes" : "minute")
+                    .foregroundColor(Color("secGreen"))
+            }
+            .multilineTextAlignment(.leading)
             
             
             //first vstack
-        } .padding(.trailing, 100.0)
+        } .padding(.trailing, 70.0)
+            .frame(width: 300)
         
         
     }
@@ -84,6 +105,6 @@ struct MenuItemRowComponent: View {
 
 struct MenuItemRowComponent_Previews: PreviewProvider {
     static var previews: some View {
-        MenuItemRowComponent(menuItem: MenuItem(name: "Coffee", price: 2.2, imgURL: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/11/16/istock-1213958021.jpg?w968h681"))
+        MenuItemRowComponent(menuItem:  MenuItem(name: "Cheese and beans panini", price: 2.5, imgURL: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/04/11/16/istock-1213958021.jpg?w968h681", prepTime: 1, description: "need to find something to write about here", type: "hotDrinks"))
     }
 }

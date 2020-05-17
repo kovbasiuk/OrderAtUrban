@@ -3,10 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0508F91A245BA38300CF0EBB /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F919245BA38300CF0EBB /* SessionStore.swift */; };
+		0508F91C245BA3D000CF0EBB /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F91B245BA3D000CF0EBB /* AuthView.swift */; };
+		0508F91E245BA4B100CF0EBB /* RTData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F91D245BA4B100CF0EBB /* RTData.swift */; };
+		0508F920245BA56200CF0EBB /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F91F245BA56200CF0EBB /* MenuItem.swift */; };
+		0508F924245BBCD000CF0EBB /* MenuItemRowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F923245BBCD000CF0EBB /* MenuItemRowComponent.swift */; };
+		0508F926245BBF3500CF0EBB /* MenuItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F925245BBF3500CF0EBB /* MenuItemRow.swift */; };
+		0508F928245C349600CF0EBB /* MenuItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F927245C349600CF0EBB /* MenuItemDetail.swift */; };
+		0508F92A245C4A8C00CF0EBB /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F929245C4A8C00CF0EBB /* TestData.swift */; };
+		0508F92F245C611000CF0EBB /* CustMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F92E245C611000CF0EBB /* CustMenuView.swift */; };
+		0508F931245C9EDC00CF0EBB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F930245C9EDC00CF0EBB /* Home.swift */; };
+		0508F933245CA2F900CF0EBB /* OrderListComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F932245CA2F900CF0EBB /* OrderListComponentView.swift */; };
+		0508F935245CA39400CF0EBB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F934245CA39400CF0EBB /* Order.swift */; };
+		0508F937245D24B200CF0EBB /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F936245D24B200CF0EBB /* OrderListView.swift */; };
+		0508F93C245F385000CF0EBB /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F93B245F385000CF0EBB /* Profile.swift */; };
+		0508F9422466F4C500CF0EBB /* MenuItemHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0508F9412466F4C500CF0EBB /* MenuItemHelper.swift */; };
 		05E2D10E245B9E2700311891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E2D10D245B9E2700311891 /* AppDelegate.swift */; };
 		05E2D110245B9E2700311891 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E2D10F245B9E2700311891 /* SceneDelegate.swift */; };
 		05E2D112245B9E2700311891 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E2D111245B9E2700311891 /* ContentView.swift */; };
@@ -15,6 +30,10 @@
 		05E2D11A245B9E2900311891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E2D118245B9E2900311891 /* LaunchScreen.storyboard */; };
 		05E2D125245B9E2900311891 /* orderaturban2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E2D124245B9E2900311891 /* orderaturban2Tests.swift */; };
 		05E2D130245B9E2900311891 /* orderaturban2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E2D12F245B9E2900311891 /* orderaturban2UITests.swift */; };
+		05E2D140245B9F2200311891 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05E2D13F245B9F2200311891 /* GoogleService-Info.plist */; };
+		60DCB6B8D09F3D378E2EAB9F /* Pods_orderaturban2_orderaturban2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5842D53DB1990056FEB74D91 /* Pods_orderaturban2_orderaturban2UITests.framework */; };
+		A38D4E0A63BE10AF2E87B8F1 /* Pods_orderaturban2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C36CF98233399E9725AB82 /* Pods_orderaturban2Tests.framework */; };
+		F34E6397522ACCB021A10592 /* Pods_orderaturban2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23F7EAFE789CB1629C6560E /* Pods_orderaturban2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +54,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0508F919245BA38300CF0EBB /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		0508F91B245BA3D000CF0EBB /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		0508F91D245BA4B100CF0EBB /* RTData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTData.swift; sourceTree = "<group>"; };
+		0508F91F245BA56200CF0EBB /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		0508F923245BBCD000CF0EBB /* MenuItemRowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRowComponent.swift; sourceTree = "<group>"; };
+		0508F925245BBF3500CF0EBB /* MenuItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemRow.swift; sourceTree = "<group>"; };
+		0508F927245C349600CF0EBB /* MenuItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetail.swift; sourceTree = "<group>"; };
+		0508F929245C4A8C00CF0EBB /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		0508F92E245C611000CF0EBB /* CustMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustMenuView.swift; sourceTree = "<group>"; };
+		0508F930245C9EDC00CF0EBB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		0508F932245CA2F900CF0EBB /* OrderListComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListComponentView.swift; sourceTree = "<group>"; };
+		0508F934245CA39400CF0EBB /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		0508F936245D24B200CF0EBB /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		0508F93B245F385000CF0EBB /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		0508F9412466F4C500CF0EBB /* MenuItemHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemHelper.swift; sourceTree = "<group>"; };
 		05E2D10A245B9E2700311891 /* orderaturban2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = orderaturban2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E2D10D245B9E2700311891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05E2D10F245B9E2700311891 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +83,16 @@
 		05E2D12B245B9E2900311891 /* orderaturban2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = orderaturban2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E2D12F245B9E2900311891 /* orderaturban2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderaturban2UITests.swift; sourceTree = "<group>"; };
 		05E2D131245B9E2900311891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05E2D13F245B9F2200311891 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		07C30781D05AE254F8D28270 /* Pods-orderaturban2-orderaturban2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderaturban2-orderaturban2UITests.release.xcconfig"; path = "Target Support Files/Pods-orderaturban2-orderaturban2UITests/Pods-orderaturban2-orderaturban2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		12FA5DE28FC9BBA88549374E /* Pods-orderaturban2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderaturban2Tests.debug.xcconfig"; path = "Target Support Files/Pods-orderaturban2Tests/Pods-orderaturban2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BD334DFE703C9DAD884048D /* Pods-orderaturban2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderaturban2.release.xcconfig"; path = "Target Support Files/Pods-orderaturban2/Pods-orderaturban2.release.xcconfig"; sourceTree = "<group>"; };
+		2E14F6B816E085B93924FF6D /* Pods-orderaturban2-orderaturban2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderaturban2-orderaturban2UITests.debug.xcconfig"; path = "Target Support Files/Pods-orderaturban2-orderaturban2UITests/Pods-orderaturban2-orderaturban2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5842D53DB1990056FEB74D91 /* Pods_orderaturban2_orderaturban2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderaturban2_orderaturban2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		695A804AC7913EF1EC445106 /* Pods-orderaturban2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderaturban2.debug.xcconfig"; path = "Target Support Files/Pods-orderaturban2/Pods-orderaturban2.debug.xcconfig"; sourceTree = "<group>"; };
+		B23F7EAFE789CB1629C6560E /* Pods_orderaturban2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderaturban2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7C36CF98233399E9725AB82 /* Pods_orderaturban2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_orderaturban2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF57449BBA64C7DB4B37CDF2 /* Pods-orderaturban2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orderaturban2Tests.release.xcconfig"; path = "Target Support Files/Pods-orderaturban2Tests/Pods-orderaturban2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34E6397522ACCB021A10592 /* Pods_orderaturban2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38D4E0A63BE10AF2E87B8F1 /* Pods_orderaturban2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +116,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DCB6B8D09F3D378E2EAB9F /* Pods_orderaturban2_orderaturban2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0508F92B245C4E0600CF0EBB /* MenuItemFolder */ = {
+			isa = PBXGroup;
+			children = (
+				0508F92E245C611000CF0EBB /* CustMenuView.swift */,
+				0508F91F245BA56200CF0EBB /* MenuItem.swift */,
+				0508F923245BBCD000CF0EBB /* MenuItemRowComponent.swift */,
+				0508F925245BBF3500CF0EBB /* MenuItemRow.swift */,
+				0508F927245C349600CF0EBB /* MenuItemDetail.swift */,
+				0508F9412466F4C500CF0EBB /* MenuItemHelper.swift */,
+			);
+			path = MenuItemFolder;
+			sourceTree = "<group>";
+		};
 		05E2D101245B9E2700311891 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +143,8 @@
 				05E2D123245B9E2900311891 /* orderaturban2Tests */,
 				05E2D12E245B9E2900311891 /* orderaturban2UITests */,
 				05E2D10B245B9E2700311891 /* Products */,
+				FBAAD3D55F3B3F3AE32168C6 /* Pods */,
+				AC2C408D6A8F219522923780 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,8 +166,19 @@
 				05E2D111245B9E2700311891 /* ContentView.swift */,
 				05E2D113245B9E2900311891 /* Assets.xcassets */,
 				05E2D118245B9E2900311891 /* LaunchScreen.storyboard */,
+				05E2D13F245B9F2200311891 /* GoogleService-Info.plist */,
 				05E2D11B245B9E2900311891 /* Info.plist */,
 				05E2D115245B9E2900311891 /* Preview Content */,
+				0508F919245BA38300CF0EBB /* SessionStore.swift */,
+				0508F91B245BA3D000CF0EBB /* AuthView.swift */,
+				0508F91D245BA4B100CF0EBB /* RTData.swift */,
+				0508F92B245C4E0600CF0EBB /* MenuItemFolder */,
+				0508F929245C4A8C00CF0EBB /* TestData.swift */,
+				0508F930245C9EDC00CF0EBB /* Home.swift */,
+				0508F932245CA2F900CF0EBB /* OrderListComponentView.swift */,
+				0508F934245CA39400CF0EBB /* Order.swift */,
+				0508F936245D24B200CF0EBB /* OrderListView.swift */,
+				0508F93B245F385000CF0EBB /* Profile.swift */,
 			);
 			path = orderaturban2;
 			sourceTree = "<group>";
@@ -136,6 +209,29 @@
 			path = orderaturban2UITests;
 			sourceTree = "<group>";
 		};
+		AC2C408D6A8F219522923780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B23F7EAFE789CB1629C6560E /* Pods_orderaturban2.framework */,
+				5842D53DB1990056FEB74D91 /* Pods_orderaturban2_orderaturban2UITests.framework */,
+				F7C36CF98233399E9725AB82 /* Pods_orderaturban2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBAAD3D55F3B3F3AE32168C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				695A804AC7913EF1EC445106 /* Pods-orderaturban2.debug.xcconfig */,
+				2BD334DFE703C9DAD884048D /* Pods-orderaturban2.release.xcconfig */,
+				2E14F6B816E085B93924FF6D /* Pods-orderaturban2-orderaturban2UITests.debug.xcconfig */,
+				07C30781D05AE254F8D28270 /* Pods-orderaturban2-orderaturban2UITests.release.xcconfig */,
+				12FA5DE28FC9BBA88549374E /* Pods-orderaturban2Tests.debug.xcconfig */,
+				FF57449BBA64C7DB4B37CDF2 /* Pods-orderaturban2Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +239,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05E2D134245B9E2900311891 /* Build configuration list for PBXNativeTarget "orderaturban2" */;
 			buildPhases = (
+				EB08A48B0338366B9C5B2EA8 /* [CP] Check Pods Manifest.lock */,
 				05E2D106245B9E2700311891 /* Sources */,
 				05E2D107245B9E2700311891 /* Frameworks */,
 				05E2D108245B9E2700311891 /* Resources */,
+				0374DB4964D83A67CBDE1E72 /* [CP] Embed Pods Frameworks */,
+				9D3036675DB30E8B7D79BE6F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05E2D137245B9E2900311891 /* Build configuration list for PBXNativeTarget "orderaturban2Tests" */;
 			buildPhases = (
+				71647B65566FABCF01C1C6B4 /* [CP] Check Pods Manifest.lock */,
 				05E2D11C245B9E2900311891 /* Sources */,
 				05E2D11D245B9E2900311891 /* Frameworks */,
 				05E2D11E245B9E2900311891 /* Resources */,
@@ -178,9 +278,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05E2D13A245B9E2900311891 /* Build configuration list for PBXNativeTarget "orderaturban2UITests" */;
 			buildPhases = (
+				A782649156AC45EC4CB8C1D5 /* [CP] Check Pods Manifest.lock */,
 				05E2D127245B9E2900311891 /* Sources */,
 				05E2D128245B9E2900311891 /* Frameworks */,
 				05E2D129245B9E2900311891 /* Resources */,
+				DC0B41F6887BCF62C9BFC401 /* [CP] Embed Pods Frameworks */,
+				C7BB0C6966C8682E71F47CC3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05E2D11A245B9E2900311891 /* LaunchScreen.storyboard in Resources */,
+				05E2D140245B9F2200311891 /* GoogleService-Info.plist in Resources */,
 				05E2D117245B9E2900311891 /* Preview Assets.xcassets in Resources */,
 				05E2D114245B9E2900311891 /* Assets.xcassets in Resources */,
 			);
@@ -262,13 +366,165 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0374DB4964D83A67CBDE1E72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orderaturban2/Pods-orderaturban2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orderaturban2/Pods-orderaturban2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-orderaturban2/Pods-orderaturban2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71647B65566FABCF01C1C6B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-orderaturban2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D3036675DB30E8B7D79BE6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orderaturban2/Pods-orderaturban2-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orderaturban2/Pods-orderaturban2-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-orderaturban2/Pods-orderaturban2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A782649156AC45EC4CB8C1D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-orderaturban2-orderaturban2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BB0C6966C8682E71F47CC3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orderaturban2-orderaturban2UITests/Pods-orderaturban2-orderaturban2UITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orderaturban2-orderaturban2UITests/Pods-orderaturban2-orderaturban2UITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-orderaturban2-orderaturban2UITests/Pods-orderaturban2-orderaturban2UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0B41F6887BCF62C9BFC401 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orderaturban2-orderaturban2UITests/Pods-orderaturban2-orderaturban2UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orderaturban2-orderaturban2UITests/Pods-orderaturban2-orderaturban2UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-orderaturban2-orderaturban2UITests/Pods-orderaturban2-orderaturban2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB08A48B0338366B9C5B2EA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-orderaturban2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		05E2D106245B9E2700311891 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0508F93C245F385000CF0EBB /* Profile.swift in Sources */,
+				0508F9422466F4C500CF0EBB /* MenuItemHelper.swift in Sources */,
+				0508F928245C349600CF0EBB /* MenuItemDetail.swift in Sources */,
+				0508F937245D24B200CF0EBB /* OrderListView.swift in Sources */,
+				0508F92A245C4A8C00CF0EBB /* TestData.swift in Sources */,
+				0508F920245BA56200CF0EBB /* MenuItem.swift in Sources */,
 				05E2D10E245B9E2700311891 /* AppDelegate.swift in Sources */,
+				0508F91E245BA4B100CF0EBB /* RTData.swift in Sources */,
+				0508F933245CA2F900CF0EBB /* OrderListComponentView.swift in Sources */,
+				0508F926245BBF3500CF0EBB /* MenuItemRow.swift in Sources */,
+				0508F931245C9EDC00CF0EBB /* Home.swift in Sources */,
+				0508F91C245BA3D000CF0EBB /* AuthView.swift in Sources */,
+				0508F924245BBCD000CF0EBB /* MenuItemRowComponent.swift in Sources */,
 				05E2D110245B9E2700311891 /* SceneDelegate.swift in Sources */,
+				0508F92F245C611000CF0EBB /* CustMenuView.swift in Sources */,
+				0508F935245CA39400CF0EBB /* Order.swift in Sources */,
+				0508F91A245BA38300CF0EBB /* SessionStore.swift in Sources */,
 				05E2D112245B9E2700311891 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +688,7 @@
 		};
 		05E2D135245B9E2900311891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 695A804AC7913EF1EC445106 /* Pods-orderaturban2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +709,7 @@
 		};
 		05E2D136245B9E2900311891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BD334DFE703C9DAD884048D /* Pods-orderaturban2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +730,7 @@
 		};
 		05E2D138245B9E2900311891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12FA5DE28FC9BBA88549374E /* Pods-orderaturban2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +753,7 @@
 		};
 		05E2D139245B9E2900311891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF57449BBA64C7DB4B37CDF2 /* Pods-orderaturban2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +776,7 @@
 		};
 		05E2D13B245B9E2900311891 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E14F6B816E085B93924FF6D /* Pods-orderaturban2-orderaturban2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +797,7 @@
 		};
 		05E2D13C245B9E2900311891 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07C30781D05AE254F8D28270 /* Pods-orderaturban2-orderaturban2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

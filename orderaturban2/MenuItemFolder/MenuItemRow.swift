@@ -8,49 +8,48 @@
 
 import SwiftUI
 
+//Row of MenuItems used in CustMenuView
 struct MenuItemRow: View {
     
     
     var menuItems:[MenuItem]
     let categoryName:String
     var body: some View {
-       
+        
         Group{
-        
-        
-        
-            NavigationView{
-         VStack(){
-            Text(self.categoryName)
-                .font(.title)
             
-            VStack{
-            ScrollView(.horizontal, showsIndicators: false){
-                HStack(alignment: .top) {
-            
-                    ForEach (menuItems, id: \.name){ menuItem in
-                       
-                        
-                        
-                        NavigationLink(destination: MenuItemDetail(menuItem: menuItem)){
+            VStack(){
+                Text(self.categoryName)
+                    .font(.title)
+                    .foregroundColor(Color("primGreen"))
+                
+                VStack{
+                    ScrollView(.horizontal, showsIndicators: false){
+                        HStack(alignment: .top) {
                             
-                            MenuItemRowComponent(menuItem: menuItem)
-                                .padding(.leading, 110.0)
-                                .frame(width: 300)
-                            
+                            ForEach (menuItems, id: \.name){ menuItem in
+                                
+                                
+                                
+                                NavigationLink(destination: MenuItemDetail(menuItem: menuItem)){
+                                    
+                                    MenuItemRowComponent(menuItem: menuItem)
+                                        .padding(.leading, 110.0)
+                                        .frame(width: 300)
+                                    
+                                }
+                            }
                         }
                     }
                 }
-                }
-                }
-            }
+            }//.padding(.leading, 40)
         }
-        
-        }
-        
         
     }
+    
+    
 }
+
 
 struct MenuItemRow_Previews: PreviewProvider {
     static var previews: some View {
