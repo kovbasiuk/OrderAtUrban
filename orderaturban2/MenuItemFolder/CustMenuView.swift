@@ -8,60 +8,40 @@
 
 import SwiftUI
 
+
+//purpose of the struct is to display rows of menu items which are categorised.
+//Called in: Home
 struct CustMenuView: View  {
- 
     
-    var hotDrinks:[MenuItem]
-    var coldDrinks:[MenuItem]
-    var hotFood:[MenuItem]
-    var coldFood:[MenuItem]
-    var deserts:[MenuItem]
-        
+    @ObservedObject var appData: RTData
+    
     var body: some View {
         VStack {
             Text("Order @ Urban")
                 .bold()
                 .font(.largeTitle)
                 .foregroundColor(Color("primGreen"))
-                .padding(.top, 30)
+            
+            
             NavigationView{
                 
-            ScrollView(.vertical, showsIndicators: false){
-            VStack {
-                if !hotDrinks.isEmpty {
-                  MenuItemRow(menuItems: hotDrinks, categoryName: "Hot Drinks")
-                }
+                //dynamically creates a SectionMenuItem row from categories data array
+                //each row contains data from the relevant SectionMenuItem
+                //forEach var in the array it returns a MenuItemRow
                 
-                if !hotFood.isEmpty {
-                MenuItemRow(menuItems: hotFood, categoryName: "Hot Food")
+                List(self.appData.categoriesData) { (object) -> MenuItemRow in
+                    return MenuItemRow(menuItems: object.items, categoryName: object.name())
                 }
 
-                if !coldDrinks.isEmpty {
-                  MenuItemRow(menuItems: coldDrinks, categoryName: "Cold Drinks")
-                }
-
-
-          if !coldFood.isEmpty {
-            MenuItemRow(menuItems: coldFood, categoryName: "Cold Food")
-          }
-
-                if !deserts.isEmpty {
-                  MenuItemRow(menuItems: deserts, categoryName: "Deserts")
-                }
-    
-        
-             
-            }.frame(width: UIScreen.main.bounds.size.width)
-            }
             }
         }
     }
 }
 
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-       CustMenuView(hotDrinks: TestData.testMenuItem, coldDrinks: TestData.testMenuItem, hotFood: TestData.testMenuItem, coldFood: TestData.testMenuItem, deserts: TestData.testMenuItem)
-        
-       // HomeView()
-    }
-}
+//struct HomeView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        let items = Dictionary(grouping: TestData.testMenuItem) { $0.type }
+//        return CustMenuView(categoriesData: items)
+//        // HomeView()
+//    }
+//}
