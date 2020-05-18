@@ -9,10 +9,15 @@
 import SwiftUI
 
 
+//purpose of struct is to display the correct home view based on the users account
+//Used in: ContentView
+
 
 struct Home: View {
      @ObservedObject var appData:RTData
     
+    //check if user is a vendor or not
+    //Used in: self's body VStack.onAppear
     func checkUser(){
         self.appData.fullUserDownload()
         
@@ -31,7 +36,9 @@ struct Home: View {
     }
 }
 
-//Struct for vendors
+
+//purpose of struct is to display the Home view tailored to vendor accounts
+//Used in: Home
 struct HomeVendor: View {
     
     @ObservedObject var appData:RTData
@@ -61,11 +68,12 @@ struct HomeVendor: View {
                     
                 }).tag(1)
         }.accentColor(Color("secGreen"))
-        //Text("hello")
+    
     }
 }
 
-//home view for Customers...used in content view
+//purpose of struct is to display the Home view tailored to non vendor accounts
+//Used in: Home
 struct HomeCust: View {
     
     @ObservedObject var appData:RTData
@@ -116,7 +124,6 @@ struct HomeCust: View {
                         
                     }).tag(3)
             }.accentColor(Color("secGreen"))
-            //Text("hello")
         }
     }
 }

@@ -13,15 +13,14 @@ import struct Kingfisher.KFImage
 
 
 
-/*
- Struct is to make any adjustments to the image
- */
+//purpose of this struct is to make any adjustments to the image
+//Used in: MenuItemRowComponent
 struct MenuItemRowComponentIMG: View {
     
     let menuItem:MenuItem
     
     
-    //method to avoid immatability
+    //method to avoid "before self is available error"
     func getItemURL() -> URL {
         
         return URL(
@@ -29,9 +28,9 @@ struct MenuItemRowComponentIMG: View {
         
     }
     
-    //Note for future: check kingfisher uisupport for ways to make more efficient
+ 
     var body: some View {
-        //fade
+       
         KFImage(getItemURL(), options: [
             .transition(.fade(0.6)),
 
@@ -47,10 +46,9 @@ struct MenuItemRowComponentIMG: View {
     }
 }
 
-/*
- Struct is a component of row which displays a preview of all MenuItems horizonally in the Row file
- */
 
+ //This struct is a component of row which displays a preview of a MenuItem in the MenuItemRow view with brief information about it
+//Used in: MenuItemRow
 struct MenuItemRowComponent: View {
     
     let menuItem:MenuItem
@@ -87,8 +85,8 @@ struct MenuItemRowComponent: View {
                 Text("\(menuItem.prepTime)")
                     .foregroundColor(Color("secGreen"))
                 
-                //if prep time is more than 1 then minites
-                //becomes plural
+                //if prep time is more than 1 then minute
+                //becomes plural -> minutes
                 Text(menuItem.prepTime>1 ? "minutes" : "minute")
                     .foregroundColor(Color("secGreen"))
             }

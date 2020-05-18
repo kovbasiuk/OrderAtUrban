@@ -10,7 +10,7 @@ import SwiftUI
 
 
 //purpose of the struct is to display rows of menu items which are categorised.
-//Called in: Home
+//Used in: Home
 struct CustMenuView: View  {
     
     @ObservedObject var appData: RTData
@@ -22,21 +22,22 @@ struct CustMenuView: View  {
                 .font(.largeTitle)
                 .foregroundColor(Color("primGreen"))
             
-            
-            NavigationView{
-                
-                //dynamically creates a SectionMenuItem row from categories data array
-                //each row contains data from the relevant SectionMenuItem
-                //forEach var in the array it returns a MenuItemRow
-                
-                List(self.appData.categoriesData) { (object) -> MenuItemRow in
-                    return MenuItemRow(menuItems: object.items, categoryName: object.name())
+            //dynamically creates a scroll view on the different catories of rows containing menu items
+            if !self.appData.categoriesData.isEmpty{
+                NavigationView{
+                    ScrollView(.vertical, showsIndicators: false){
+                        ForEach (self.appData.categoriesData, id: \.type){ categoryItem in
+                            
+                            return MenuItemRow(menuItems: categoryItem.items, categoryName: categoryItem.name())
+                        }
+                    }
                 }
-
             }
         }
+        
     }
 }
+
 
 //struct HomeView_Previews: PreviewProvider {
 //    static var previews: some View {

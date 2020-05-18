@@ -7,17 +7,16 @@
 //
 
 import SwiftUI
-
+//Purpose of this struct is to provide the user a chance to log out
+//Used in: Home
 struct Profile: View {
      @EnvironmentObject var session: SessionStore
     
     var body: some View {
         VStack {
             Text("Profile")
-            
-           // Text("My userID: \(session.appData?.userID ?? "no user ID found")" ?? "No user Id")
-               
         
+               //sign out -> sets session to nil and user gets redirected to AuthView
             Button(action: session.signOut){
         Text("Sign out")
         }

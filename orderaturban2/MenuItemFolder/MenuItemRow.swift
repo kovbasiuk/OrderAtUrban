@@ -8,7 +8,8 @@
 
 import SwiftUI
 
-//Row of MenuItems used in CustMenuView
+//Purpose of struct is to display a row of MenuItems used in CustMenuView which will be categorised
+//Used in: CustMenuView
 struct MenuItemRow: View {
     
     
@@ -27,10 +28,10 @@ struct MenuItemRow: View {
                     ScrollView(.horizontal, showsIndicators: false){
                         HStack(alignment: .top) {
                             
+                            
+                            //dynamically creates a row of MenuItemRow components with a navigation link to the relevant MenuItemDetail
                             ForEach (menuItems, id: \.name){ menuItem in
-                                
-                                
-                                
+ 
                                 NavigationLink(destination: MenuItemDetail(menuItem: menuItem)){
                                     
                                     MenuItemRowComponent(menuItem: menuItem)

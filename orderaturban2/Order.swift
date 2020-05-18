@@ -10,8 +10,8 @@ import Foundation
 import Firebase
 import SwiftUI
 
-//struct for each order
-//THE BASKET/NEW ORDER VIEW IS AT THE BOTTOM OF THIS FILE
+//Purpose of this struct is to register details of orders
+//Used in: OrderListComponentView, OrderListView, RTData
 class Order : ObservableObject, Identifiable {
     
     init(items:[MenuItem:Int], orderID: String){
@@ -31,19 +31,31 @@ class Order : ObservableObject, Identifiable {
     
     var userID = Auth.auth().currentUser?.uid
     
+    //Possible states for the order, only 1 can be true at a time therefor didSet is needed to switch the others off. Order can be cancelled as long as it hasnt been completed yet. readyForPickUp is the starting point therefor setting it to true doesnt affect other bools as you can still cancel the order at this stage
     @Published  var readyForPickUp = false
     
-    @Published  var completed = false
+    @Published  var completed = false {
+        
+           didSet{
+            self.readyForPickUp = false
+           }
+       }
+
     
-    @Published  var cancelled = false
+    @Published  var cancelled = false {
+           didSet{
+            self.readyForPickUp = false
+           }
+       }
+
     
 
 }
 
-//struct to display orders that havent been posted yet, used in Home file in struct HomeView
+//
 
-
-//NEED TO ADD BUTTON  TO REMOVE FROM ORDER LATER
+//Purpose of this struct is to display orders that havent been posted yet
+//Used in: Home
 struct NewOrderView : View {
     
     @EnvironmentObject var session:SessionStore
@@ -51,11 +63,13 @@ struct NewOrderView : View {
     //  @State var currOrder  = Order(items: [:], orderID: "")
     
     
-    
+    //
     @State var menuItems=[MenuItem]()
     @State var count=[Int]()
+    
     @State var orderStatus = "No items in this order yet"
     
+    //sends order to firestore and resets the values in the arrays
     func submit(){
         self.session.appData?.sendOrder(order: session.appData!.currOrder)
            self.menuItems = [MenuItem]()
@@ -63,6 +77,8 @@ struct NewOrderView : View {
            self.orderStatus="Order submitted!"
        }
     
+    //populates the arrays with the relevant values. Had to use 2 arrays as a dictionary was causing errors
+    //Used in: self's body group onAppear()
     func getCurrOrder(){
         self.menuItems=Array(((self.session.appData?.currOrder.items.keys)!))
         self.count=Array(((self.session.appData?.currOrder.items.values)!))
@@ -80,6 +96,7 @@ struct NewOrderView : View {
                 if menuItems.count != 0 && count.count != 0{
                     
                     
+                    //formats list to display items with menu item name on the left, along with the item's price below and quantity on the right
                     
                     List( menuItems.indices){ i in
                         
@@ -89,7 +106,7 @@ struct NewOrderView : View {
                             
                             VStack(alignment: .leading, spacing: 15){
                                 
-                                
+                                //format to 2 decimal places
                                 Text(self.menuItems[i].name)
                                 Text("£"+String(format: "%.2f",self.menuItems[i].price))
                                 

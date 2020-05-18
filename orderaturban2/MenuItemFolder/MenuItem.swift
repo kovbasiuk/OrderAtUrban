@@ -8,7 +8,8 @@
 
 import Foundation
 
-//struct used to register menu items downloaded from firestore
+//Purpose of the struct is to store information about each menuItem downloaded from Firestore
+//Used in: MenuItemDetail, MenuItemHelper, MenuItemRow, MenuItemRowComponent, Order, RTData
 struct MenuItem: Identifiable, Hashable {
     
     //random id to satisfy identifiable
@@ -21,6 +22,7 @@ struct MenuItem: Identifiable, Hashable {
     let desc: String
     let type: String
     
+    //used to satisfy Hashable
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
@@ -34,6 +36,7 @@ struct MenuItem: Identifiable, Hashable {
         self.type = type
     }
     
+    //dictionary initialiser for the usage in MenuItemHelper
     init(data: [String: Any]) {
         name = data["name"] as? String ?? "No Name"
         imgURL = data["imgURL"] as? String ?? "No img URL"

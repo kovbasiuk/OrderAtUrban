@@ -10,6 +10,9 @@ import SwiftUI
 
 //list of all orders
 
+//purpose of this struct is to display orders with relevant options to modify order state
+//Vendor account users will have more options
+//Used in: Home
 struct OrderListView: View {
     @EnvironmentObject var session:SessionStore
    var orders : [Order]
