@@ -9,7 +9,7 @@
 
 import SwiftUI
 import Firebase
-import Combine
+
 
 
 //Purpose of this struct is to keep track of data relating to Firebase Auhentication and any saved runtime data

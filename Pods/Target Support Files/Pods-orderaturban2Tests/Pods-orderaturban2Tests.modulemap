@@ -1,0 +1,6 @@
+framework module Pods_orderaturban2Tests {
+  umbrella header "Pods-orderaturban2Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
